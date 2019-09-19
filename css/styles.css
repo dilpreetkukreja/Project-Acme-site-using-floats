@@ -1,0 +1,192 @@
+/* universal */
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+	width:80%;
+	margin:0 auto;	
+}
+.dark{
+	background: #35424a;
+}
+/* HEADER */
+header{
+	
+  	color: #ffffff;
+  	border-bottom: #e8491d 3px solid;
+}
+header a{
+  	color: #ffffff;
+  	text-decoration: none;
+}
+
+.branding span, .current a{
+	color:#e8491d;
+}
+
+.navigation ul{
+	padding:0;
+	list-style: none;
+}
+
+
+.branding{
+	float:left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+.navigation{
+	float:right;
+	
+}
+
+.navigation li{
+	display:inline-block;
+	padding:40px 20px;
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear:both;
+}
+
+#showcase{
+	background: url("../images/showcase.jpg") no-repeat 0 -400px;
+	text-align: center;
+    color: #ffffff;
+}
+#showcase h1{
+	margin:0;
+	padding-top: 80px;
+	padding-bottom: 30px;
+    font-size: 55px;
+   
+
+}
+#showcase p{
+	font-size:20px;
+	padding-bottom:30px;
+	margin-bottom:0;
+	line-height: 1.5;
+	
+}
+#newsletter h1, #newsletter form button{
+	color:#ffffff;
+}
+#newsletter h1{
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	float:left;
+}
+#newsletter form{
+	float:right;
+	display:flex;
+} 
+#newsletter form button{
+	background-color: #e8491d;
+	border: none;
+	padding:14px 10px 13px;
+	height:45px;
+}
+#newsletter input
+{
+	padding:10px;
+	width: 190px;
+	height:45px;
+}
+#boxes{
+	margin-top: 20px;
+}
+#boxes img{
+	width:80px;
+}
+.box{
+	float:left;
+	width:30%;
+	text-align: center;
+	padding:10px;
+}
+footer{
+	text-align: center;
+	background-color: #e8491d;
+	color:#ffffff;
+	padding-top:30px;
+	padding-bottom: 30px;
+
+}
+@media(max-width: 768px) {
+	header .branding,.navigation, #newsletter h1, #newsletter form, #boxes .box{
+		float:none;
+		text-align:center;
+		width: 100%;
+
+	}
+	#newsletter form button{
+		display:block;
+		width:100%;
+	}
+	#newsletter form input[type="email"]{
+		width:100%;
+		margin-bottom: 5px;
+	}
+}
+
+/*Login form*/
+fieldset{
+	padding: 0;
+	margin: 0;
+	border:0;
+}
+form{
+	width:250px;
+	margin:20px auto;
+	border:1px solid #6c6c6c;
+	border-radius:5px;
+}
+input{
+	border-radius: 3px;
+}
+.account-info{
+	padding:20px 20px 10px 20px;
+	
+
+}
+.account-info input{
+	
+	width:100%;
+	border: 1px solid #c6c7cc;
+	height: 25px;	
+
+}
+.account-info label{
+	
+	display:block;
+	color:#931990;
+	font-weight: bold;
+	
+	padding-bottom: 10px;
+
+}
+.account-action{
+	border-top: 1px solid #c6c7cc;
+	padding:20px;
+	background-color: #ececec;
+	
+}
+.account-action {
+	font-size:11px;
+	color:gray;
+}
+.button_2{
+	padding:10px 15px;
+	font-size:15px;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius:5px;
+	background: linear-gradient(#931990,#684898);
+}
